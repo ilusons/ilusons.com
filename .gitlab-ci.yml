@@ -1,0 +1,17 @@
+image: node:6.3.1
+
+pages:
+  cache:
+    paths:
+    - node_modules/
+
+  script:
+  - npm install -g metalsmith
+  - npm install
+  - make build
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+
