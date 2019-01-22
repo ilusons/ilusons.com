@@ -1,5 +1,6 @@
 ---
 title: harmony
+subtitle: Android, Firebase, OpenSL, YouTube, last.fm, REST
 date: 2018-12-01
 tags: public
 thumb: 5.png

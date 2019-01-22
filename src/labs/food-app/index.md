@@ -1,5 +1,6 @@
 ---
 title: Food App
+subtitle: Android, Firebase
 date: 2017-01-02
 tags: public
 thumb: 3.jpg

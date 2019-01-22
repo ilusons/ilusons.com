@@ -1,5 +1,6 @@
 ---
 title: Photo Organizer
+subtitle: Windows, .Net, C#, WPF
 date: 2016-09-11
 tags: public
 thumb: 1.png
