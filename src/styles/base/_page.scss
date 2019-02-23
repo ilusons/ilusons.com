@@ -27,10 +27,10 @@ body {
 body {
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover, contain;
-    background-position: center, bottom;
+    background-size: cover;
+    background-position: top;
     background-color: _palette(bg);
-    @include vendor('background-image', ( url("/img/bg.png"), 'linear-gradient(45deg, #{_palette(bg1)} 15%, #{_palette(bg2) 85%})', ));
+    @include vendor('background-image', ( url("/img/bg.jpg"), 'linear-gradient(45deg, #{_palette(bg1)} 15%, #{_palette(bg2) 85%})', ));
     // Prevents animation/transition "flicker" on page load.
     // Automatically added/removed by js/main.js.
     &.is-loading {

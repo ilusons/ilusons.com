@@ -1,5 +1,5 @@
 ---
-title: Adinterestpro
+title: AdInterestPro
 subtitle: Node, Angular 7, Firebase, Facebook Marketing, Stripe, Gitlab CD
 date: 2019-02-01
 tags: public

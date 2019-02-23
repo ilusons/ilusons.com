@@ -9,16 +9,16 @@ $font: ( family: ('Open Sans', Helvetica, sans-serif), family-fixed: ('Courier N
 // Palette.
 $palette: ( 
   bg: #935d8c, 
-  fg: rgba(255, 255, 255, 0.95), 
+  fg: rgba(255, 255, 255, 0.85), 
   fg-bold: #ffffff, 
-  fg-light: rgba(255, 255, 255, 0.95), 
+  fg-light: rgba(255, 255, 255, 0.85), 
   border: rgba(255, 255, 255, 0.45), 
   border-bg: rgba(255, 255, 255, 0.085), 
   border2: rgba(255, 255, 255, 0.75), 
   border2-bg: rgba(255, 255, 255, 0.2), 
   invert: ( 
-    bg: rgba(240, 240, 240, 0.90), 
-    bg-alt: rgba(240, 240, 240, 0.85), 
+    bg: rgba(240, 240, 240, 0.85), 
+    bg-alt: rgba(240, 240, 240, 0.75), 
     fg: #2D2D2D, 
     fg-bold: #1A1A1A, 
     fg-light: rgba(33, 33, 33, 0.25), 
@@ -32,5 +32,5 @@ $palette: (
     accent3: #8b78be, 
     accent4: #7598dd, 
     accent5: #32affc, 
-    bg1: #da6976, 
-    bg2: #5f4d93);
+    bg1: #000002, 
+    bg2: #24323f);
