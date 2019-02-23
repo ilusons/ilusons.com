@@ -1,17 +1,34 @@
 ---
-title: AdInterestPro
-subtitle: NodeJS, Angular 7, Firebase, REST, Stripe, Mailchimp, Heroku, Gitlab CD
-date: 2019-03-01
+title: Adinterestpro
+subtitle: Node, Angular 7, Firebase, Facebook Marketing, Stripe, Gitlab CD
+date: 2019-02-01
 tags: public
 thumb: 1.jpg
 ---
 
-An Angular 7 powered website and web-app with User and Admin dashboards.
-REST Api, Authentication and Database backed by Firebase (+Functions).
-Payments powered by Stripe.
-Mailing support using Mailchimp.
-Hosting by Heroku.
-Git and CD using Gitlab.
+A full featured web-app for ad keywords research.
+
+
+#### Features
+
+- User accounts
+- User dashboard
+- Admin dashboard
+- Stripe subscriptions
+- Keywords research based on Audience count
+- Usage statistics, charts, graphs
+- Copy-paste, download selection on the fly
+
+#### Tech
+
+- Node
+- Angular 7
+- Firebase Firestore, Auth, Functions
+- Facebook Marketing
+- Stripe
+- Mailchimp
+- Heroku
+- Gitlab CD
 
 #### Screen-shots
 
