@@ -6,10 +6,10 @@ tags: public
 thumb: 1.jpg
 ---
 
-A WordPress based website for a dress store.
+A WordPress based website for a dress store. [Visit](https://quincegallery.com)
 
 #### Screen-shots
 
-[<img src="1.jpg" width="192">](1.jpg)
+[<img src="1.jpg" width="400">](1.jpg)
 
 *Private work*

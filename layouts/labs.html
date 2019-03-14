@@ -38,22 +38,26 @@
     </nav>
 
     <!-- Main -->
-    <div id="main" class="grid">
+    <div id="main" class="main special">
 
-      {{#each pagination.files}}
+      <div class="portfolio">
 
-      <section class="main special">
-        <header class="major">
-          <h2><a href="/{{{ this.path }}}" rel="bookmark" class="icon fa-flask"> {{this.title}}</a></h2>
-          <h4>{{{this.subtitle}}}</h4>
+        {{#each pagination.files}}
+
+        <section class="main special portfolio-item">
           {{#if this.thumb}}
-          <img src="/{{{ this.rurl }}}/{{{ this.thumb }}}" title="{{this.title}}" />
+          <img class="portfolio-item-image" src="/{{{ this.rurl }}}/{{{ this.thumb }}}" title="{{this.title}}" />
           {{/if}}
-          <p>{{{this.excerpt}}}</p>
-        </header>
-      </section>
+          <div class="portfolio-item-text">
+            <h2><a href="/{{{ this.path }}}" rel="bookmark" class="icon fa-flask"> {{this.title}}</a></h2>
+            <p>{{{this.subtitle}}}</p>
+            <p>{{{this.excerpt}}}</p>
+          </div>
+        </section>
 
-      {{/each}}
+        {{/each}}
+
+      </div>
 
     </div>
 

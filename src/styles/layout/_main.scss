@@ -6,134 +6,139 @@
 
 /* Main */
 
-	#main {
-		@include color(invert);
-		border-radius: _size(border-radius-main);
+#main {
+  @include color(invert);
+  border-radius: _size(border-radius-main);
 
-		&.grid {
-			display: flex;
-			flex-wrap: wrap;
-			> section {
-				width: 50%;
-        margin: 1em 0 1.3em 0;
-        padding: 3em 3em 1em 3em;
-				img {
-					margin: 0.3em;
-					object-fit: cover;
-					object-position: center;
-					width: 100%;
-					height: 256px;					
-				}
-				p {
-          margin: 0.5em 0 0.8em 0;
-				}
-			}
-		}
-		
-		.grid-2 {
-			display: flex;
-			flex-wrap: wrap;
-			> section {
-        width: 50%;
-        margin: 1.5em 0 1.9em 0;
-				img {
-					object-fit: cover;
-					object-position: center;
-					width: 90%;
-					height: 256px;					
-				}
-				p {
-          font-size: small;
-          margin: 0.3em 0 0.6em 0;
-				}
-			}
-		}
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
 
-		> .main {
-			@include padding(5em, 5em);
-			border-top: solid 1px _palette(invert, border);
+    .portfolio-item {
+      position: relative;
+      width: 100%;
+      margin: 2em 1.7em;
 
-			&:first-child {
-				border-top: 0;
-			}
+      color: _palette(fg-bold);
 
-			> .image.main:first-child {
-				margin: -5em 0 5em -5em;
-				width: calc(100% + 10em);
-				border-top-right-radius: _size(border-radius-main);
-				border-top-left-radius: _size(border-radius-main);
-				border-bottom-right-radius: 0;
-				border-bottom-left-radius: 0;
+      a {
+        color: _palette(fg-bold);
+      }
 
-				img {
-					border-top-right-radius: _size(border-radius-main);
-					border-top-left-radius: _size(border-radius-main);
-					border-bottom-right-radius: 0;
-					border-bottom-left-radius: 0;
-				}
-			}
-		}
+      .portfolio-item-image {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 420px;
+      }
 
-		@include breakpoint(large) {
-			> .main {
-				@include padding(4em, 4em);
+      .portfolio-item-text {
+        height: 100%;
+        font-weight: 400;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        vertical-align: middle;
+        padding: 5.1em 2em;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 15%, rgba(0, 0, 0, 0.99) 100%);
+        opacity: 0.0;
+        transition: opacity 0.7s;
+        -webkit-transition: opacity 0.7s;
+      }
 
-				> .image.main:first-child {
-					margin: -4em 0 4em -4em;
-					width: calc(100% + 8em);
-				}
-			}
-		}
+      .portfolio-item-text:hover {
+        opacity: 1.0;
+      }
+    }
+  }
 
-		@include breakpoint(medium) {
-			> .main {
-				@include padding(4em, 3em);
+  >.main {
+    @include padding(5em, 5em);
+    border-top: solid 1px _palette(invert, border);
 
-				> .image.main:first-child {
-					margin: -4em 0 4em -3em;
-					width: calc(100% + 6em);
-				}
-			}
-		}
+    &:first-child {
+      border-top: 0;
+    }
 
-		@include breakpoint(small) {
-			> .main {
-				@include padding(3em, 2em);
+    >.image.main:first-child {
+      margin: -5em 0 5em -5em;
+      width: calc(100% + 10em);
+      border-top-right-radius: _size(border-radius-main);
+      border-top-left-radius: _size(border-radius-main);
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
 
-				> .image.main:first-child {
-					margin: -3em 0 2em -2em;
-					width: calc(100% + 4em);
-				}
-			}
-		}
+      img {
+        border-top-right-radius: _size(border-radius-main);
+        border-top-left-radius: _size(border-radius-main);
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
 
-		@include breakpoint(xsmall) {
-			> .main {
-				@include padding(3em, 1.5em);
+  @include breakpoint(large) {
+    >.main {
+      @include padding(4em, 4em);
 
-				> .image.main:first-child {
-					margin: -3em 0 1.5em -1.5em;
-					width: calc(100% + 3em);
-				}
-			}
-		}
+      >.image.main:first-child {
+        margin: -4em 0 4em -4em;
+        width: calc(100% + 8em);
+      }
+    }
+  }
 
-		@include breakpoint(xxsmall) {
-			border-radius: 0;
+  @include breakpoint(medium) {
+    >.main {
+      @include padding(4em, 3em);
 
-			> .main {
-				@include padding(2.5em, 1em);
+      >.image.main:first-child {
+        margin: -4em 0 4em -3em;
+        width: calc(100% + 6em);
+      }
+    }
+  }
 
-				> .image.main:first-child {
-					margin: -2.5em 0 1.5em -1em;
-					width: calc(100% + 2em);
-					border-radius: 0;
+  @include breakpoint(small) {
+    >.main {
+      @include padding(3em, 2em);
 
-					img {
-						border-radius: 0;
-					}
-				}
-			}
-		}
+      >.image.main:first-child {
+        margin: -3em 0 2em -2em;
+        width: calc(100% + 4em);
+      }
+    }
+  }
 
-	}
+  @include breakpoint(xsmall) {
+    >.main {
+      @include padding(3em, 1.5em);
+
+      >.image.main:first-child {
+        margin: -3em 0 1.5em -1.5em;
+        width: calc(100% + 3em);
+      }
+    }
+  }
+
+  @include breakpoint(xxsmall) {
+    border-radius: 0;
+
+    >.main {
+      @include padding(2.5em, 1em);
+
+      >.image.main:first-child {
+        margin: -2.5em 0 1.5em -1em;
+        width: calc(100% + 2em);
+        border-radius: 0;
+
+        img {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+}
