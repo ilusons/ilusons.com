@@ -4,7 +4,7 @@
       <div class="elevate-cover">
         <div class="elevate-cover__textOffset">
           <div class="elevate-cover__text">
-            <span class="blogSelected-year">{{metadata.year}}</span>
+            <span class="blogSelected-year">{{metadata.date}}</span>
             —
             <h1 class="elevate-cover__title">{{metadata.title}}</h1>
             <p class="elevate-cover__description">{{metadata.description}}</p>

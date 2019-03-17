@@ -4,6 +4,7 @@ const path = require('path')
 const baseUrl = 'https://ilusons.com';
 
 module.exports = {
+  mode: 'spa',
   env: {
     baseUrl
   },
@@ -50,11 +51,6 @@ module.exports = {
   ],
 
   build: {
-    mode: 'spa',
-    analyze: false,
-    analyze: {
-      analyzerMode: 'static'
-    },
     extend(config) {
       const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg|webp)$/');
       config.module.rules.splice(config.module.rules.indexOf(rule), 1);
@@ -94,7 +90,10 @@ module.exports = {
       src: '~plugins/ga.js',
       ssr: false
     },
-    '~/plugins/effects',
+    {
+      src: '~/plugins/effects.js',
+      ssr: false
+    },
   ],
   modules: [
     ['nuxt-sass-resources-loader', [

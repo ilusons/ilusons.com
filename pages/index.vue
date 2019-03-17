@@ -17,6 +17,24 @@ import labs from "~/static/labs";
 export default {
   components: { HeroSection, PortfolioItem },
 
+  mounted() {
+    console.log(this.$particles)
+    try {
+      let options = {
+        color: "#111",
+        interactive: false,
+        speed: "fast",
+        density: "low"
+      };
+      let particleCanvas = new this.$particles(
+        document.getElementById("particles"),
+        options
+      );
+    } catch (e) {
+      console.log(e);
+    }
+  },
+
   async asyncData({ store }) {
     return labs.metadatas.then(res => {
       return {

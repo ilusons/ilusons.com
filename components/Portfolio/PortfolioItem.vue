@@ -31,6 +31,19 @@
       item: {
         type: Object
       }
+    },
+
+    mounted() {      
+      try {
+        const containers = document.getElementsByClassName("effects-3dp-container");
+        for (const continer of containers) {
+          const inner = continer.getElementsByClassName("effects-3dp-inner")[0];
+
+          this.$init3dp(continer, inner);
+        }
+      } catch (e) {
+        console.log(e)
+      }
     }
   }
 </script>

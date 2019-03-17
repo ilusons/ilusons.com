@@ -44,8 +44,7 @@ img {
   opacity: 0;
 
   &[lazy="loading"] {
-    opacity: 1;
-    filter: blur(15px);
+    opacity: 0.3;
   }
   &[lazy="loaded"] {
     opacity: 1;
