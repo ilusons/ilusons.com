@@ -3,7 +3,7 @@ name: 'food-app'
 title: Food App
 description: |
   Android, Firebase
-date: 01-Jan-2019
+date: Jan 1, 2019
 thumb: 3.jpg
 image: 3.jpg
 color: '#870022'

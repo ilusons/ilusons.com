@@ -3,7 +3,7 @@ name: 'notioff'
 title: NotiOff
 description: |
   Android
-date: 01-Dec-2018
+date: Dec 1, 2018
 thumb: 0.png
 image: 0.png
 color: '#f05020'

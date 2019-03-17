@@ -3,7 +3,7 @@ name: 'adinterestpro'
 title: AdInterestPro
 description: |
   Node, Angular 7, Firebase, Facebook Marketing, Stripe, Gitlab CD  
-date: 01-Feb-2019
+date: Feb 1, 2019
 thumb: 1.jpg
 image: 1.jpg
 color: '#29a0ca'

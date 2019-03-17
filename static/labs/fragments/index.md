@@ -3,7 +3,7 @@ name: 'fragments'
 title: Fragments
 description: |
   Unity, Android
-date: 15-Nov-2018
+date: Nov 15, 2018
 thumb: 0.png
 image: 0.png
 color: '#88a8c8'

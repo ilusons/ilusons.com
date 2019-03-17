@@ -40,7 +40,7 @@ export default {
       return {
         items: res
           .filter(x => x && x.featured)
-          .sort((x, y) => !(new Date(x.date) < new Date(y.date)))
+          .sort((x, y) => (new Date(x.date) < new Date(y.date)))
       };
     });
   }

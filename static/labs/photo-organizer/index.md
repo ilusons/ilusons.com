@@ -3,7 +3,7 @@ name: 'photo-organizer'
 title: Photo Organizer
 description: |
   Windows, .Net, C#, WPF
-date: 11-Sep-2016
+date: Sep 11, 2016
 thumb: 1.png
 image: 1.png
 color: '#2b2b2b'

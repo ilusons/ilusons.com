@@ -15,7 +15,7 @@ export default {
   async asyncData({ store }) {
     return labs.metadatas.then(res => {
       return {
-        items: res.sort((x, y) => !(new Date(x.date) < new Date(y.date)))
+        items: res.sort((x, y) => (new Date(x.date) < new Date(y.date)))
       };
     });
   }

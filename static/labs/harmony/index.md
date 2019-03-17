@@ -3,7 +3,7 @@ name: 'harmony'
 title: harmony
 description: |
   Android, Firebase, OpenSL, YouTube, last.fm, REST
-date: 01-Dec-2018
+date: Dec 1, 2018
 thumb: 5.png
 image: 5.png
 color: '#162255'

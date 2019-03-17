@@ -3,7 +3,7 @@ name: 'reshot-wallpapers'
 title: ReShot Wallpapers
 description: |
   Android, UnSplash, REST
-date: 01-Dec-2018
+date: Dec 1, 2018
 thumb: 2.png
 image: 2.png
 color: '#202028'
