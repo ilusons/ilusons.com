@@ -1,0 +1,83 @@
+@import 'utilities/variables';
+@import 'utilities/keyframes';
+
+@import 'base/grid';
+@import 'base/fonts';
+@import 'base/general';
+@import 'base/links';
+@import 'base/sprite-mixin';
+
+header,
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav {
+  .links {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .links li {
+    display: inline-block;
+    margin-right: 3rem;
+  }
+
+  .links li:last-child {
+    margin-right: 0;
+  }
+
+  .links a {
+    text-decoration: none;
+    display: block;
+    padding: 2rem 0;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .links a:hover {
+    text-decoration: none;
+  }
+
+  .links a::before {
+    background-color: rgba(255, 68, 0, 0.25);
+    transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
+  }
+
+  .links a::after {
+    background-color: rgba(172, 255, 47, 0.25);
+    transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1);
+  }
+
+  .links a::after,
+  .links a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .links a:hover::after,
+  .links a:hover::before {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.effects-3dp-container {
+  perspective: 25px;
+
+  .effects-3dp-inner {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+  }
+}

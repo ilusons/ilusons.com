@@ -1,41 +1,31 @@
 {
-  "name": "web",
+  "name": "static",
+  "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "analyze": "nuxt build --analyze"
+  },
   "dependencies": {
-    "metalsmith-debug": "^1.2.0",
-    "metalsmith-debug-ui": "^0.3.2"
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.3.4",
+    "vue": "^2.6.9",
+    "vue-lazyload": "^1.2.6"
   },
   "devDependencies": {
-    "handlebars": "*",
-    "metalsmith": "*",
-    "metalsmith-broken-link-checker": "^0.1.10",
-    "metalsmith-build-date": "^0.2.0",
-    "metalsmith-collections": "*",
-    "metalsmith-concat": "^6.0.0",
-    "metalsmith-define": "^2.0.1",
-    "metalsmith-drafts": "0.0.1",
-    "metalsmith-env": "^2.0.0",
-    "metalsmith-eslint": "^3.1.0",
-    "metalsmith-excerpts": "^1.1.0",
-    "metalsmith-feed": "^0.2.0",
-    "metalsmith-filemetadata": "^1.0.0",
-    "metalsmith-google-analytics": "0.0.1",
-    "metalsmith-html-minifier": "^2.1.0",
-    "metalsmith-just-a-moment": "^1.0.0",
-    "metalsmith-layouts": "1.8.1",
-    "metalsmith-mapsite": "^1.0.4",
-    "metalsmith-markdown": "*",
-    "metalsmith-metallic": "^1.0.0",
-    "metalsmith-page-titles": "^1.0.2",
-    "metalsmith-pagination": "^1.4.0",
-    "metalsmith-permalinks": "^0.5.0",
-    "metalsmith-publish": "^0.1.4",
-    "metalsmith-rssfeed": "https://github.com/Code0987/metalsmith-rssfeed.git",
-    "metalsmith-rurl": "https://github.com/Code0987/metalsmith-rurl.git",
-    "metalsmith-sass": "^1.5.1",
-    "metalsmith-serve": "*",
-    "metalsmith-typography": "^0.1.1",
-    "moment": "*",
-    "s3-publish": "^1.0.11"
+    "frontmatter-markdown-loader": "^1.5.0",
+    "highlight.js": "^9.13.1",
+    "node-sass": "^4.11.0",
+    "nuxt-sass-resources-loader": "^2.0.5",
+    "responsive-loader": "^1.1.0",
+    "sass-loader": "^7.1.0",
+    "sharp": "^0.20.8",
+    "vue-server-renderer": "^2.6.9",
+    "vue-template-compiler": "^2.6.9"
   }
 }

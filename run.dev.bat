@@ -1,1 +1,0 @@
-"node_modules/.bin/metalsmith.cmd" --config metalsmith.dev.json

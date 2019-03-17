@@ -1,4 +1,4 @@
-image: node:6.3.1
+image: node
 
 pages:
   cache:
@@ -6,12 +6,12 @@ pages:
     - node_modules/
 
   script:
-  - npm install -g metalsmith
+  - npm install -g nuxt
   - npm install
-  - make build
+  - rpm run generate
   artifacts:
     paths:
-    - public
+    - dist
   when: manual
   only:
   - master

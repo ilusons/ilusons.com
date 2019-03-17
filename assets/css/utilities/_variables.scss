@@ -1,0 +1,37 @@
+//COLORS
+$primary: rgb(50, 50, 50);
+$primary-light: lighten($primary, 20%);
+$primary-lighter: lighten($primary, 30%);
+$secondary: #030303;
+$secondary-light: #161618;
+$secondary-lighter: #767676;
+$secondary-super-lighter: #e4e4e4;
+$background-primary: rgba(240, 240, 240, .8);
+$background-primary-darker: rgba(0, 0, 0, .8);
+$background-secondary:$secondary;
+$background-secondary-darker: #000000;
+$success: #57BC27;
+$warning: #F9B13D;
+$text-negative: white;
+
+//name //color //text or false
+$colors: "primary"$primary $text-negative,
+"primary-light"$primary-light $text-negative,
+"primary-lighter"$primary-lighter false,
+"secondary"$secondary $text-negative,
+"secondary-light"$secondary-light $text-negative,
+"secondary-lighter"$secondary-lighter false,
+"background-primary"$background-primary false,
+"background-secondary"$background-secondary false,
+"white"white false,
+"black"black $text-negative,
+"success"$success $text-negative,
+"warning"$warning $text-negative;
+
+$gutter: 2.4rem;
+$header-height: 7rem;
+$header-height-breakpoint: 5rem;
+$nav-responsive-width: 26rem;
+
+$border-radius: 3px;
+$shadow: 0 2px 4px rgba(black, .08);
