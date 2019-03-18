@@ -30,9 +30,6 @@ export default {
   justify-content: space-around;
   align-items: center;
   z-index: 100;
-  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
-  font-weight: bold;
 
   .logo {
     width: 70%;

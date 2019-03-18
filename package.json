@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "nuxt",
+    "start": "nuxt build && nuxt start --spa",
     "generate": "nuxt generate",
     "analyze": "nuxt build --analyze"
   },

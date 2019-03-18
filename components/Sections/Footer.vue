@@ -6,7 +6,7 @@
       <a href="#top" class="logo-link">
         <img src="~/assets/images/logo.svg" alt="Logo" class="logo">
       </a>
-      
+
       <p class="copyright">© {{year}} ilusons.</p>
     </nav>
   </footer>
@@ -31,11 +31,11 @@ export default {
 .footer {
   text-align: center;
   padding: 1rem 2rem;
-  font-weight: bold;
 
   .logo-link {
     margin: 2rem 0;
   }
+
   .logo {
     width: 4.5rem;
     height: 4.5rem;

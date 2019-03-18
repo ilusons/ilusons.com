@@ -1,14 +1,18 @@
 <template>
-  <div class="effects-3dp-container">
+  <div class="effects-3dp-container portfolio-item-container">
     <div class="effects-3dp-inner portfolio-item">
       <a :href="`/labs/${item.name}`" class="portfolio-thumb-inner">
         <div
           class="portfolio-thumb-hover"
           :style="`background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${this.item.color} 70%)`"
         >
+          <div class="portfolio-item-bg"></div>
           <div class="portfolio-thumb-text">
-            <h3 class="portfolio-thumb-description">{{ item.title }}</h3>
-            <h3 class="portfolio-thumb-client">{{ item.description }}</h3>
+            <h3 class="portfolio-thumb-title">
+              {{ item.title }}
+              <span class="portfolio-item-title-arrow">⟶</span>
+            </h3>
+            <h3 class="portfolio-thumb-description">{{ item.description }}</h3>
           </div>
         </div>
         <ImageResponsive
@@ -19,8 +23,6 @@
           :alt="item.cardAlt"
         />
       </a>
-      <div class="portfolio-description">{{ item.title }}</div>
-      <div class="portfolio-client">{{ item.description }}</div>
     </div>
   </div>
 </template>
@@ -52,7 +54,7 @@
 .thumb {
   object-fit: cover;
   object-position: center;
-  max-height: 420px;
+  max-height: 509px;
   transition: all ease 0.75s;
   opacity: 0.7;
   &[lazy="loaded"] {
@@ -66,7 +68,7 @@
   justify-content: space-around;
   align-items: center;
   z-index: 100;
-  margin: 6rem 0;
+  margin: 12rem 0;
   box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.35);
 }
 
@@ -81,48 +83,74 @@
       padding-bottom: 0;
     }
 
+    &-bg {
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+    }
+
+    &-title-arrow {
+      opacity: 0;
+      transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+    }
+
+    &-container {
+      &:nth-child(2n + 1) {
+        transform: translateX(-3rem);
+      }
+
+      &:nth-child(2n) {
+        transform: translateX(3rem);
+      }
+    }
+
     @media (min-width: $screen-sm) {
       padding-bottom: 4.8rem;
     }
   }
 
-  &-title {
-    &--coming {
-      color: $secondary-lighter;
-    }
-  }
-
-  &-content {
-    vertical-align: middle;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  &-client {
-    @media (min-width: $screen-sm) {
-      display: none;
-    }
-  }
-  &-description {
-    color: $secondary;
-    padding-top: 1rem;
-    @media (min-width: $screen-sm) {
-      display: none;
-    }
-  }
   &-thumb-inner {
     position: relative;
     font-size: 0;
     display: block;
 
     &:hover {
-      .portfolio-thumb-hover {
+      .portfolio-item-bg {
         opacity: 1;
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+      @-webkit-keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .portfolio-item-title-arrow {
+        opacity: 1;
+        animation: blink 1s step-start 0s infinite;
+        -webkit-animation: blink 1s step-start 0s infinite;
       }
     }
   }
 
   &-thumb-hover {
-    opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -142,23 +170,19 @@
     padding-right: 4rem;
   }
 
-  &-thumb-description {
+  &-thumb-title {
+    font-size: 4rem;
     line-height: initial;
     text-align: left;
     color: white;
-    &--dark {
-      @extend .portfolio-thumb-description;
-      color: $secondary;
-    }
+    text-shadow: 0 4px 2px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
   }
-  &-thumb-client {
+  &-thumb-description {
+    font-size: 2.3rem;
     text-align: left;
     color: white;
-    font-weight: 200;
-    &--dark {
-      @extend .portfolio-thumb-client;
-      color: $secondary;
-    }
+    text-shadow: 0 4px 2px rgba(0, 0, 0, 0.15);
   }
 }
 </style>

@@ -2,18 +2,22 @@
   <div class="container">
     <section class="hero" id="hero">
       <p>
-        <mark>Hi,
-          <br>I'm Neeraj
-          <br>a Freelance Software Developer.
+        <mark>
+          Hi,
+          <br>I'm
+          <em>Neeraj</em>
+          <br>a
+          <em>Software Developer</em>.
         </mark>
+        <br>
+        <span class="arrow">↓</span>
       </p>
     </section>
   </div>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style lang="scss">
@@ -25,12 +29,25 @@ export default {
 
   p {
     text-align: left;
-    font-size: 3.5rem;
     padding: 8rem 0;
   }
 
-  mark {    
+  mark {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: $primary-lighter;
     background-color: $background-primary;
+
+    em {
+      color: $primary;
+      font-style: normal;
+    }
+  }
+
+  .arrow {
+    font-size: 7rem;
+    font-weight: 700;
+    color: $primary-lighter;
   }
 }
 </style>
