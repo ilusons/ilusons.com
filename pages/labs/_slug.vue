@@ -1,30 +1,32 @@
 <template>
-  <div class="blogSelected">
-    <div class="intro">
-      <div class="elevate-cover">
-        <div class="elevate-cover__textOffset">
-          <div class="elevate-cover__text">
-            <span class="blogSelected-year">{{metadata.date}}</span>
-            —
-            <h1 class="elevate-cover__title">{{metadata.title}}</h1>
-            <p class="elevate-cover__description">{{metadata.description}}</p>
+  <section>
+    <article>
+      <div class="intro">
+        <div class="elevate-cover">
+          <div class="elevate-cover-textOffset">
+            <div class="elevate-cover-text">
+              <span>{{metadata.date}}</span>
+              —
+              <h1 class="elevate-cover-title">{{metadata.title}}</h1>
+              <p class="elevate-cover-description">{{metadata.description}}</p>
+            </div>
           </div>
+          <ImageResponsive
+            :src="`/labs/${metadata.name}/${metadata.image}`"
+            width="100%"
+            class="elevate-cover-img"
+            :alt="'Image'"
+          />
         </div>
-        <ImageResponsive
-          :src="`/labs/${metadata.name}/${metadata.image}`"
-          width="100%"
-          class="elevate-cover__img"
-          :alt="'Blog picture'"
+      </div>
+      <div class="container small">
+        <DynamicMarkdown
+          :render-func="data.vue.render"
+          :static-render-funcs="data.vue.staticRenderFns"
         />
       </div>
-    </div>
-    <div class="container small">
-      <DynamicMarkdown
-        :render-func="data.vue.render"
-        :static-render-funcs="data.vue.staticRenderFns"
-      />
-    </div>
-  </div>
+    </article>
+  </section>
 </template>
 
 <script lang="js">  
@@ -50,26 +52,7 @@
 .overflowhidden {
   overflow: hidden;
 }
-.blogSelected-horizontalImage {
-  height: 56rem;
-  background-size: contain;
-  transition: all ease 0.35s;
-  opacity: 0;
 
-  &[lazy="loading"] {
-    filter: blur(15px);
-    background-repeat: no-repeat !important;
-    background-size: contain !important;
-  }
-  &[lazy="loaded"] {
-    opacity: 1;
-    background-repeat: no-repeat !important;
-    background-size: contain !important;
-  }
-  .intro {
-    display: flex;
-  }
-}
 .elevate-cover {
   display: flex;
   flex-direction: column;
@@ -78,12 +61,12 @@
     flex-direction: row;
   }
 
-  &__img,
-  &__textOffset {
+  &-img,
+  &-textOffset {
     width: 100%;
   }
 
-  &__text {
+  &-text {
     max-width: 500px;
     width: 100%;
     padding: 2.4rem;
@@ -94,16 +77,15 @@
     }
   }
 
-  &__textOffset {
+  &-textOffset {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  &__title {
+  &-title {
     font-size: 3rem;
-    font-family: "Tiempos Headline", Arial, sans-serif;
     color: $secondary;
 
     @media (min-width: $screen-sm) {
@@ -111,10 +93,11 @@
     }
   }
 
-  &__description {
+  &-description {
     margin: 0;
   }
 }
+
 .dynamicMarkdown {
   padding: 3.2rem 0;
   font-size: 16px;
@@ -145,7 +128,7 @@
   }
 
   li {
-    list-style-type: initial;
+    list-style-type: none;
   }
 
   pre {

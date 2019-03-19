@@ -4,7 +4,7 @@
       <nuxt-link to="/" class="logo-link link">
         <img src="~/assets/images/logo.svg" alt="Logo" class="logo">
       </nuxt-link>
-
+      <SideNavToggle @toggle="$emit('sidenavToggle')"/>
       <nav>
         <NavItems/>
       </nav>
@@ -14,10 +14,12 @@
 
 <script>
 import NavItems from "~/components/Navigation/NavItems";
+import SideNavToggle from "~/components/Navigation/SideNavToggle";
 
 export default {
   components: {
-    NavItems
+    NavItems,
+    SideNavToggle
   }
 };
 </script>
@@ -35,6 +37,8 @@ export default {
     width: 70%;
     height: 70%;
     opacity: 0.6;
+    margin-top: 2rem;
+    margin-left: -2rem;
     transition: opacity 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
   }
 
@@ -47,9 +51,16 @@ export default {
     align-items: center;
     justify-content: space-between;
   }
-}
 
-.spacer {
-  flex: 1;
+  nav {
+    display: none;
+  }
+  @media (min-width: $screen-sm) {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
 </style>

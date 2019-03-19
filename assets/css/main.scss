@@ -25,7 +25,9 @@
 }
 
 .links a {
+  color: $primary-light;
   text-decoration: none;
+  text-transform: uppercase;
   display: block;
   padding: 2rem 0;
   position: relative;
@@ -90,4 +92,48 @@
 .blink {
   animation: blink 1s step-start 0s infinite;
   -webkit-animation: blink 1s step-start 0s infinite;
+}
+
+.feature {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+
+  h3 {
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: $primary-lighter;
+  }
+
+  p {
+    color: $primary-lighter;
+    text-align: left;
+    padding-top: 8rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      color: $primary;
+    }
+  }
+}
+
+.glyph {
+  font-size: 7rem;
+  font-weight: 700;
+  color: $primary-lighter;
+}
+
+article {
+  font-family: $font-family-serif;
 }

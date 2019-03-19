@@ -7,7 +7,7 @@ date: Dec 1, 2018
 thumb: 2.png
 image: 2.png
 color: '#202028'
-featured: true
+featured: false
 ---
 
 Wallpapers (Backgrounds) in HD quality.

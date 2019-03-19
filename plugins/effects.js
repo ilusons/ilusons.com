@@ -170,13 +170,16 @@ export default ({
             Math.pow(this.particles[i].x - this.particles[j].x, 2) +
             Math.pow(this.particles[i].y - this.particles[j].y, 2)
           );
-          if (distance > 120) {
+
+          const D = 96;
+
+          if (distance > D) {
             continue;
           }
 
           this.ctx.beginPath();
           this.ctx.strokeStyle = this.options.color;
-          this.ctx.globalAlpha = (120 - distance) / 120;
+          this.ctx.globalAlpha = (D - distance) / D;
           this.ctx.lineWidth = 0.7;
           this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
           this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
@@ -194,7 +197,7 @@ export default ({
       if (speed === 'fast') {
         return 1;
       } else if (speed === 'slow') {
-        return 0.33;
+        return 0.4;
       } else if (speed === 'none') {
         return 0;
       }
@@ -203,7 +206,7 @@ export default ({
     // Helper method to set density multiplier
     Particles.prototype.setDensity = function (density) {
       if (density === 'high') {
-        return 5000;
+        return 3000;
       } else if (density === 'low') {
         return 20000;
       }

@@ -4,8 +4,8 @@ title: AdInterestPro
 description: |
   Node, Angular 7, Firebase, Facebook Marketing, Stripe, Gitlab CD  
 date: Feb 1, 2019
-thumb: 1.jpg
-image: 1.jpg
+thumb: image.png
+image: image.png
 color: '#29a0ca'
 featured: true
 ---
@@ -37,5 +37,8 @@ A full featured web-app for ad keywords research.
 #### Screen-shots
 
 [<img src="1.jpg" width="256">](1.jpg)
+[<img src="2.jpg" width="256">](2.jpg)
+[<img src="3.jpg" width="256">](3.jpg)
+[<img src="4.jpg" width="256">](4.jpg)
 
 *Private work*

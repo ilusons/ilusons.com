@@ -31,6 +31,7 @@ export default {
 .footer {
   text-align: center;
   padding: 1rem 2rem;
+  padding-top: 4rem;
 
   .logo-link {
     margin: 2rem 0;

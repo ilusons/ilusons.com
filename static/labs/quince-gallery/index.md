@@ -7,7 +7,7 @@ date: Jan 1, 2019
 thumb: 1.jpg
 image: 1.jpg
 color: '#b6176e'
-featured: true
+featured: false
 ---
 
 A WordPress based website for a dress store. [Visit](https://quincegallery.com)

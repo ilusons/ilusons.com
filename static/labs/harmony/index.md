@@ -4,10 +4,10 @@ title: harmony
 description: |
   Android, Firebase, OpenSL, YouTube, last.fm, REST
 date: Dec 1, 2018
-thumb: 5.png
-image: 5.png
+thumb: image.png
+image: image.png
 color: '#162255'
-featured: false
+featured: true
 ---
 
 A unique, non-conventional music player for Android with personalized recommendations and unlimited music!

@@ -4,7 +4,7 @@
       <a :href="`/labs/${item.name}`" class="portfolio-thumb-inner">
         <div
           class="portfolio-thumb-hover"
-          :style="`background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${this.item.color} 70%)`"
+          :style="`background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${this.item.color} 90%)`"
         >
           <div class="portfolio-item-bg"></div>
           <div class="portfolio-thumb-text">
@@ -70,6 +70,10 @@
   z-index: 100;
   margin: 12rem 0;
   box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.35);
+
+  @media (min-width: $screen-sm) {
+    margin: 4rem 0;
+  }
 }
 
 .portfolio {
@@ -108,11 +112,11 @@
 
     &-container {
       &:nth-child(2n + 1) {
-        transform: translateX(-3rem);
+        transform: translateX(-1.5rem);
       }
 
       &:nth-child(2n) {
-        transform: translateX(3rem);
+        transform: translateX(1.5rem);
       }
     }
 
@@ -158,8 +162,9 @@
     -moz-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+
     @media (max-width: $screen-sm) {
-      display: none;
+      position: relative;
     }
   }
 
@@ -168,6 +173,13 @@
     bottom: 3rem;
     left: 4rem;
     padding-right: 4rem;
+
+    @media (max-width: $screen-sm) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-right: 0;
+    }
   }
 
   &-thumb-title {
@@ -177,12 +189,26 @@
     color: white;
     text-shadow: 0 4px 2px rgba(0, 0, 0, 0.15);
     font-weight: bold;
+    text-transform: none !important;
+    font-style: normal !important;
+
+    @media (max-width: $screen-sm) {
+      font-size: 1.8rem;
+      color: $primary-light;
+      font-weight: normal;
+    }
   }
   &-thumb-description {
     font-size: 2.3rem;
     text-align: left;
     color: white;
     text-shadow: 0 4px 2px rgba(0, 0, 0, 0.15);
+    text-transform: none !important;
+    font-style: normal !important;
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
   }
 }
 </style>
