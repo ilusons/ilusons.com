@@ -23,6 +23,10 @@ export default {
   components: { Hero, Contact, Portfolio },
 
   async asyncData({ store }) {
+    labs.skills.then(res => {
+      console.log(res);
+    });
+
     return labs.metadatas.then(res => {
       return {
         portfolio_items: res

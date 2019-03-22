@@ -8,5 +8,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    data: {
+      type: Object
+    }
+  }
+};
 </script>

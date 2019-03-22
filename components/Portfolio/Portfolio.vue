@@ -13,7 +13,7 @@ import PortfolioItem from "~/components/Portfolio/PortfolioItem.vue";
 export default {
   props: {
     items: {
-      type: Object
+      type: Array
     }
   },
 

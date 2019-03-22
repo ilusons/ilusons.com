@@ -9,10 +9,11 @@
           <em>Neeraj</em>,
           <br>a
           <em>Software Developer</em>.
-          <br>I make your tech ideas come alive
+          <br>I make softwares
           <em>
-            <sm>for money</sm>
-          </em>.
+            <span class="sm">for money</span>
+          </em>
+          <br>and they actually work.
         </mark>
       </p>
     </section>
@@ -52,7 +53,7 @@ export default {
       color: $primary;
       font-style: normal;
 
-      sm {
+      .sm {
         font-size: 1rem;
         position: absolute;
         margin-top: -0.1rem;
