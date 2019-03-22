@@ -29,7 +29,12 @@
   </section>
 </template>
 
-<script lang="js">  
+<script lang="js">
+  // HACK: Stupid bug. 
+  if (!window.location.href.endsWith('/')) {
+    window.location.assign(window.location.href + '/')
+  }
+
   import DynamicMarkdown from "~/components/Markdown/DynamicMarkdown.vue"
 
   import labs from "~/static/labs";

@@ -1,7 +1,7 @@
 <template>
   <div class="effects-3dp-container portfolio-item-container">
     <div class="effects-3dp-inner portfolio-item">
-      <a :href="`/labs/${item.name}`" class="portfolio-thumb-inner">
+      <a :href="`/labs/${item.name}/`" class="portfolio-thumb-inner">
         <div
           class="portfolio-thumb-hover"
           :style="`background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ${this.item.color} 90%)`"
