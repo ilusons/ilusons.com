@@ -8,6 +8,7 @@ thumb: image.png
 image: image.png
 color: '#29a0ca'
 featured: true
+link: http://adinterestpro.com
 ---
 
 A full featured web-app for ad keywords research.

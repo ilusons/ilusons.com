@@ -10,7 +10,10 @@
           <div class="portfolio-thumb-text">
             <h3 class="portfolio-thumb-title">
               {{ item.title }}
-              <span class="portfolio-item-title-arrow">⟶</span>
+              <a
+                :href="item.link ? item.link : `/labs/${item.name}/`"
+                class="portfolio-item-title-arrow"
+              >Visit ⟶</a>
             </h3>
             <h3 class="portfolio-thumb-description">{{ item.description }}</h3>
           </div>
@@ -103,11 +106,25 @@
     }
 
     &-title-arrow {
+      font-size: 3rem;
+      line-height: initial;
+      text-align: left;
+      color: white;
+      text-shadow: 0 4px 2px rgba(0, 0, 0, 0.15);
+      font-weight: bold;
+      text-transform: none !important;
+      font-style: italic !important;
+      text-decoration: none;
+      margin-left: 3rem;
       opacity: 0;
       transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     &-container {
@@ -135,21 +152,8 @@
         opacity: 1;
       }
 
-      @keyframes blink {
-        50% {
-          opacity: 0;
-        }
-      }
-      @-webkit-keyframes blink {
-        50% {
-          opacity: 0;
-        }
-      }
-
       .portfolio-item-title-arrow {
         opacity: 1;
-        animation: blink 1s step-start 0s infinite;
-        -webkit-animation: blink 1s step-start 0s infinite;
       }
     }
   }

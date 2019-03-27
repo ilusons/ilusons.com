@@ -8,6 +8,7 @@ thumb: image.png
 image: image.png
 color: '#162255'
 featured: true
+link: http://harmony.ilusons.com
 ---
 
 A unique, non-conventional music player for Android with personalized recommendations and unlimited music!
