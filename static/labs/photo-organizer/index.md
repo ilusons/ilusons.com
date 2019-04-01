@@ -2,7 +2,8 @@
 name: 'photo-organizer'
 title: Photo Organizer
 description: |
-  Windows, .Net, C#, WPF
+  A minimal desktop software for auto-organizing collection of images.
+tags: Windows, .Net, C#, WPF
 date: Sep 11, 2016
 thumb: 1.png
 image: 1.png

@@ -50,7 +50,7 @@ export default {
 <style lang="scss">
 .cloud {
   width: 100% !important;
-  height: 360px !important;
+  height: 40rem !important;
 }
 </style>
 

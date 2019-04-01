@@ -2,7 +2,8 @@
 name: 'fragments'
 title: Fragments
 description: |
-  Unity, Android
+  Fragments: An endless journey
+tags: Unity, Android
 date: Nov 15, 2018
 thumb: 0.png
 image: 0.png

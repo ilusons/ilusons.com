@@ -2,7 +2,8 @@
 name: 'silence'
 title: Silence
 description: |
-  Android, Firebase, REST, Geo
+  Anonymous Geo-location based messaging app.
+tags: Android, Firebase, REST, Geo
 date: Dec 1, 2018
 thumb: 0.png
 image: 0.png

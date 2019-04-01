@@ -2,7 +2,8 @@
 name: 'quince-gallery'
 title: Quince Gallery
 description: |
-  WordPress
+  A WordPress based website for a dress store.
+tags: WordPress
 date: Jan 1, 2019
 thumb: 1.jpg
 image: 1.jpg

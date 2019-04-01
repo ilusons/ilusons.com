@@ -2,7 +2,8 @@
 name: 'notioff'
 title: NotiOff
 description: |
-  Android
+  A simple tool to get rid of notifications.
+tags: Android
 date: Dec 1, 2018
 thumb: 0.png
 image: 0.png

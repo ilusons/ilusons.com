@@ -2,7 +2,8 @@
 name: 'food-app'
 title: Food App
 description: |
-  Android, Firebase
+  An android app, fully integrated for sharing food stall reviews, location and people details.
+tags: Android, Firebase
 date: Jan 1, 2019
 thumb: 3.jpg
 image: 3.jpg

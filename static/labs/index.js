@@ -41,7 +41,7 @@ async function skills() {
   let result = []
 
   for (const path of keys) {
-    const value = (await import(`~/static/labs/${path}`)).attributes.description
+    const value = (await import(`~/static/labs/${path}`)).attributes.tags
 
     const terms = value.split(/[,]+/).map(x => x.trim())
 

@@ -2,7 +2,8 @@
 name: 'harmony'
 title: harmony
 description: |
-  Android, Firebase, OpenSL, YouTube, last.fm, REST
+  A unique, non-conventional music player for Android with personalized recommendations and unlimited music!
+tags: Android, Firebase, OpenSL, YouTube, last.fm, REST
 date: Dec 1, 2018
 thumb: image.png
 image: image.png

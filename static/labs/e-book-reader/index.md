@@ -2,7 +2,8 @@
 name: 'e-book-reader'
 title: E-Book Reader
 description: |
-  Android, Realm, ePub 
+  A simple e-book reader for epub files.
+tags: Android, Realm, ePub 
 date: Dec 1, 2018
 thumb: 0.png
 image: 0.png

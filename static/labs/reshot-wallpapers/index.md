@@ -2,7 +2,8 @@
 name: 'reshot-wallpapers'
 title: ReShot Wallpapers
 description: |
-  Android, UnSplash, REST
+  Wallpapers (Backgrounds) in HD quality.
+tags: Android, UnSplash, REST
 date: Dec 1, 2018
 thumb: 2.png
 image: 2.png

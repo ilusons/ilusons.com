@@ -2,7 +2,8 @@
 name: 'adinterestpro'
 title: AdInterestPro
 description: |
-  Node, Angular 7, Firebase, Facebook Marketing, Stripe, Gitlab CD  
+  A full featured web-app for ad keywords research.
+tags: Node, Angular 7, Firebase, Facebook Marketing, Stripe, Gitlab CD    
 date: Feb 1, 2019
 thumb: image.png
 image: image.png
