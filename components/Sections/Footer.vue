@@ -31,7 +31,7 @@ export default {
 .footer {
   text-align: center;
   padding: 1rem 2rem;
-  padding-top: 4rem;
+  padding-top: 5rem;
 
   .logo-link {
     margin: 2rem 0;
@@ -40,6 +40,11 @@ export default {
   .logo {
     width: 4.5rem;
     height: 4.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .copyright {
+    padding-top: 1.2rem;
   }
 }
 </style>
