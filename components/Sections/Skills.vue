@@ -4,12 +4,12 @@
       <h3>Skills</h3>
       <wordcloud
         class="cloud"
-        :data="towordcloud(skills)"
+        :data="words"
         nameKey="name"
         valueKey="value"
         :showTooltip="false"
-        :margin="{top: 0, right: 0, bottom: 0, left: 0 }"
-        :rotate="{from: -5, to: 5, numOfOrientation: 15 }"
+        :margin="{top: 3, right: 3, bottom: 3, left: 3}"
+        :rotate="{from: -5, to: 5, numOfOrientation: 15}"
         :font="'Lora'"
       ></wordcloud>
     </section>
@@ -26,23 +26,34 @@ export default {
 
   props: {
     skills: {
-      type: Array
+      type: Object
     }
   },
 
   methods: {
-    towordcloud: function(m) {
+    towordcloud(m) {
       const r = [];
-
       for (const key of Object.keys(m)) {
         r.push({
           name: key,
           value: m[key]
         });
       }
-
       return r;
     }
+  },
+
+  data() {
+    return {
+      words: []
+    };
+  },
+
+  mounted() {
+    this.words = this.towordcloud(this.skills);
+    setTimeout(() => {
+      this.words = this.towordcloud(this.skills);
+    }, 763);
   }
 };
 </script>
@@ -53,4 +64,3 @@ export default {
   height: 40rem !important;
 }
 </style>
-

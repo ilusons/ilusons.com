@@ -3,9 +3,17 @@ const keys = require
   .keys()
   .map(key => key.slice(2, key.length))
 
-const metadatas = Promise.all(
-  keys.map(async path => (await import(`~/static/labs/${path}`)).attributes)
-)
+async function metadatas() {
+  let result = []
+
+  for (const path of keys) {
+    const values = (await import(`~/static/labs/${path}`)).attributes
+
+    result.push(values)
+  }
+
+  return result
+}
 
 function sortByFrequency(array) {
   var frequency = {};

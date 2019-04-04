@@ -203,7 +203,7 @@
     }
   }
   &-thumb-description {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     text-align: left;
     color: white;
     text-shadow: 0 4px 2px rgba(0, 0, 0, 0.15);

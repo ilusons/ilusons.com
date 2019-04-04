@@ -33,17 +33,15 @@ export default {
   },
 
   async asyncData({ store }) {
+    const portfolio_items = (await labs.metadatas())
+      .filter(x => x && x.featured)
+      .sort((x, y) => new Date(x.date) < new Date(y.date));
     const skills = await labs.skills();
 
-    return labs.metadatas.then(res => {
-      return {
-        skills,
-
-        portfolio_items: res
-          .filter(x => x && x.featured)
-          .sort((x, y) => new Date(x.date) < new Date(y.date))
-      };
-    });
+    return {
+      portfolio_items,
+      skills
+    };
   }
 };
 </script>
