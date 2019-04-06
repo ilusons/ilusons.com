@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <PortfolioItem v-for="item in items" :key="item.name" :item="item"/>
+    <PortfolioItem v-for="item in portfolio_items" :key="item.name" :item="item"/>
   </div>
 </template>
 
@@ -13,11 +13,12 @@ export default {
   components: { PortfolioItem },
 
   async asyncData({ store }) {
-    return labs.metadatas.then(res => {
-      return {
-        items: res.sort((x, y) => (new Date(x.date) < new Date(y.date)))
-      };
-    });
+    const portfolio_items = (await labs.metadatas())
+      .sort((x, y) => new Date(x.date) < new Date(y.date));
+
+    return {
+      portfolio_items
+    };
   }
 };
 </script>
