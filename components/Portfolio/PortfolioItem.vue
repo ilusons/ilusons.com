@@ -125,6 +125,12 @@
       &:hover {
         text-decoration: none;
       }
+
+      @media (max-width: $screen-sm) {
+        font-size: 1.8rem;
+        color: $primary-light;
+        font-weight: normal;
+      }
     }
 
     &-container {

@@ -59,10 +59,12 @@ async function skills() {
   result = toFrequencyMap(result)
 
   result['Node'] = 5
-  result['Android'] = 5
-  result['Angular 7'] = 5
+  result['Android'] = 4
+  result['Angular 7'] = 4
   result['Vue'] = 3
   result['Nuxt'] = 3
+  result['Discord'] = 3
+  result['WordPress'] = 3
   result['Gitlab CD'] = 2
   result['Stripe'] = 2
   result['WPF'] = 2
