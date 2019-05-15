@@ -9,8 +9,10 @@
         valueKey="value"
         :showTooltip="false"
         :margin="{top: 3, right: 3, bottom: 3, left: 3}"
-        :rotate="{from: -5, to: 5, numOfOrientation: 15}"
+        :rotate="{from: -1, to: 1, numOfOrientation: 30}"
         :font="'Lora'"
+        :color="['#767676', '#929292']"
+        :wordPadding="10"
       ></wordcloud>
     </section>
   </div>

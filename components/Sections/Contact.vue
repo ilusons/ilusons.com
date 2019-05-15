@@ -8,7 +8,7 @@
         <br>
         <a href="mailto:hi@ilusons.com">hi@ilusons.com</a>
         <br>
-        is 24/7 active
+        [24/7 active]
       </p>
     </section>
   </div>
