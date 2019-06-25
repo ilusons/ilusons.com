@@ -10,7 +10,7 @@
       <nuxt-link to="/labs">Labs</nuxt-link>
     </li>
     <li>
-      <a href="mailto:hi@ilusons.com">Contact</a>
+      <nuxt-link to="/contact">Contact</nuxt-link>
     </li>
   </ul>
 </template>

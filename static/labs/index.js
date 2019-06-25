@@ -58,6 +58,10 @@ async function skills() {
 
   result = toFrequencyMap(result)
 
+  result['..'] = 1
+  result['...'] = 1
+  result['....'] = 1
+
   result['Node'] = 5
   result['Android'] = 4
   result['Angular 7'] = 4

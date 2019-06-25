@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <section class="feature">
-      <h3>Skills</h3>
+      <h3>Skills <input type="text" @keyup="searchSkills($event);" placeholder="Search" class="search" /></h3>
       <wordcloud
         class="cloud"
         :data="words"
@@ -42,6 +42,21 @@ export default {
         });
       }
       return r;
+    },
+
+    searchSkills($event) {
+      const query = $event.target.value.trim().toLowerCase();
+
+      const new_words = this.towordcloud(this.skills);
+
+      if(!query || query.length < 2) {
+        this.words = new_words;        
+        return;
+      }
+
+      const search_skills = new_words.filter(x => x.name.toLowerCase().indexOf(query) > -1 || x.name.indexOf('..') > -1);
+
+      this.words = search_skills;
     }
   },
 
@@ -52,9 +67,11 @@ export default {
   },
 
   mounted() {
-    this.words = this.towordcloud(this.skills);
+    const new_words = this.towordcloud(this.skills);
+
+    this.words = new_words;
     setTimeout(() => {
-      this.words = this.towordcloud(this.skills);
+      this.words = new_words;
     }, 763);
   }
 };
@@ -64,5 +81,13 @@ export default {
 .cloud {
   width: 100% !important;
   height: 40rem !important;
+}
+
+.search {
+  margin-left: 2rem;
+  border: 1px solid #cbcbcb;
+  font-style: italic;
+  font-size: smaller;
+  padding: 0.4rem;
 }
 </style>
