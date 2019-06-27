@@ -67,11 +67,9 @@ export default {
   },
 
   mounted() {
-    const new_words = this.towordcloud(this.skills);
-
-    this.words = new_words;
+    this.words = this.towordcloud(this.skills);
     setTimeout(() => {
-      this.words = new_words;
+      this.words = this.towordcloud(this.skills);
     }, 763);
   }
 };
