@@ -8,12 +8,8 @@
           <br>I'm
           <em>Neeraj</em>,
           <br>a
-          <em>Software Developer</em>.
-          <br>I make softwares
-          <em>
-            <span class="sm">for money</span>
-          </em>
-          <br>and they actually work.
+          <em>Full-stack Engineer</em>.
+          <br>
         </mark>
       </p>
     </section>
@@ -46,18 +42,13 @@ export default {
   pointer-events: visible;
 
   mark {
+    font-size: 2.9rem;
     color: $primary-lighter;
     background-color: $background-primary;
 
     em {
       color: $primary;
       font-style: normal;
-
-      .sm {
-        font-size: 1rem;
-        position: absolute;
-        margin-top: -0.1rem;
-      }
     }
   }
 }

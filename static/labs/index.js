@@ -62,16 +62,22 @@ async function skills() {
   result['...'] = 1
   result['....'] = 1
 
+  result['Angular'] = 4
+  result['Vue/Nuxt'] = 3
+  result['React/Next'] = 3
+  result['WordPress'] = 2
+  result['Bootstrap'] = 3
+
+  result['Android'] = 5
+
   result['Node'] = 5
-  result['Android'] = 4
-  result['Angular 7'] = 4
-  result['Vue'] = 3
-  result['Nuxt'] = 3
+  result['Express'] = 4
+  result['C#.Net'] = 3
+  result['WPF'] = 3
+
+  result['Stripe'] = 4
+  result['Slack'] = 3
   result['Discord'] = 3
-  result['WordPress'] = 3
-  result['Gitlab CD'] = 2
-  result['Stripe'] = 2
-  result['WPF'] = 2
 
   return result
 }

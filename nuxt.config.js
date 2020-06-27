@@ -9,7 +9,7 @@ module.exports = {
     baseUrl
   },
   head: {
-    title: 'Freelance Software Development | ilusons',
+    title: 'ilusons',
     meta: [{
       charset: 'utf-8'
     }, {

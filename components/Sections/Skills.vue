@@ -1,14 +1,14 @@
 <template>
   <div class="container">
     <section class="feature">
-      <h3>Skills <input type="text" @keyup="searchSkills($event);" placeholder="Search" class="search" /></h3>
+      <!--<h3>Skills <input type="text" @keyup="searchSkills($event);" placeholder="Search" class="search" /></h3>-->
       <wordcloud
         class="cloud"
         :data="words"
         nameKey="name"
         valueKey="value"
         :showTooltip="false"
-        :margin="{top: 3, right: 3, bottom: 3, left: 3}"
+        :margin="{top: 1, right: 1, bottom: 1, left: 1}"
         :rotate="{from: -1, to: 1, numOfOrientation: 30}"
         :font="'Lora'"
         :color="['#767676', '#929292']"
@@ -68,9 +68,9 @@ export default {
 
   mounted() {
     this.words = this.towordcloud(this.skills);
-    setTimeout(() => {
+    setInterval(() => {
       this.words = this.towordcloud(this.skills);
-    }, 763);
+    }, 3763);
   }
 };
 </script>
@@ -78,7 +78,7 @@ export default {
 <style lang="scss">
 .cloud {
   width: 100% !important;
-  height: 40rem !important;
+  height: 36rem !important;
 }
 
 .search {

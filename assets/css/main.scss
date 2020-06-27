@@ -7,6 +7,10 @@
 @import 'base/links';
 @import 'base/sprite-mixin';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .links {
   display: block;
   list-style: none;

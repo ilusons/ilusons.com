@@ -1,16 +1,21 @@
 <template>
   <div class="page-index">
-    <Hero/>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <Hero/>
+        </div>
+        <div class="col-md-7">
+          <Skills :skills="skills"/>
+        </div>
+      </div>
+    </div>
     <p class="container">
-      <span class="glyph">↓</span>
+      <span class="glyph" @click="scroll">↓</span>
     </p>
     <Portfolio :items="portfolio_items"/>
     <p class="container">
-      <span class="container glyph">↓</span>
-    </p>
-    <Skills :skills="skills"/>
-    <p class="container">
-      <span class="container glyph">↓</span>
+      <span class="container glyph" @click="scroll">↓</span>
     </p>
     <Contact/>
   </div>
@@ -42,6 +47,18 @@ export default {
       portfolio_items,
       skills
     };
+  },
+
+  methods: {
+    scroll: function (event) {
+      window.scrollBy(0, 700);
+    }
   }
 };
 </script>
+
+<style lang="scss">
+.glyph {
+  cursor: pointer;
+}
+</style>
