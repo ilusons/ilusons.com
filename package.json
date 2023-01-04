@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.3.4",
+    "nuxt": "^2.15.8",
     "vue": "^2.6.9",
     "vue-lazyload": "^1.2.6",
     "vue-wordcloud": "^1.1.1"
